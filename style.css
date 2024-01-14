@@ -114,3 +114,16 @@ svg {
     line-height: 1.25rem;
   }
 }
+
+@media (max-width: 522px) {
+  .card {
+    width: 90%; /* Adjust the width as needed for small screens */
+    grid-template-columns: auto; /* Display as a single column on small screens */
+    max-width: 100%; /* Prevent the card from becoming too wide */
+  }
+
+  .card-avatar svg {
+    margin-top: 1rem;
+    max-width: 15%; /* Set a fixed width for the profile picture on small screens */
+  }
+}
