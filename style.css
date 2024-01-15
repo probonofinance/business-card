@@ -87,6 +87,7 @@ svg {
 
   .value {
     font-size: 1rem;
+    padding: 0;
   }
 
   .label {
@@ -118,12 +119,14 @@ svg {
 @media (max-width: 522px) {
   .card {
     width: 100%; /* Adjust the width as needed for small screens */
+    height: auto; /* Auto height to fit content */
+    padding: 1em;
     grid-template-columns: auto; /* Display as a single column on small screens */
     max-width: 100%; /* Prevent the card from becoming too wide */
   }
 
   .card-avatar svg {
     margin-top: 1rem;
-    max-width: 15%; /* Set a fixed width for the profile picture on small screens */
+    max-width: 35%; /* Set a fixed width for the profile picture on small screens */
   }
 }
