@@ -40,6 +40,37 @@ body {
 
   align-items: center;
 
+  margin: 1em;
+
+  will-change: transform;
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 0 32px 80px 14px rgba(0, 0, 0, 0.36),
+      0 0 0 1px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.cardnoimage {
+  width: calc(var(--card-size) * 1.586);
+  height: auto;
+
+  padding: 1em;
+
+  border-radius: 0.75rem;
+  box-shadow: 0 22px 70px 4px rgba(0, 0, 0, 0.56), 0 0 0 1px rgba(0, 0, 0, 0.3);
+
+  background: black;
+
+  display: grid;
+  color: white;
+
+  align-items: center;
+
+  margin: 1em;
+
   will-change: transform;
   transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
@@ -118,6 +149,14 @@ svg {
 
 @media (max-width: 522px) {
   .card {
+    width: 100%; /* Adjust the width as needed for small screens */
+    height: auto; /* Auto height to fit content */
+    padding: 1em;
+    grid-template-columns: auto; /* Display as a single column on small screens */
+    max-width: 100%; /* Prevent the card from becoming too wide */
+  }
+
+  .cardnoimage {
     width: 100%; /* Adjust the width as needed for small screens */
     height: auto; /* Auto height to fit content */
     padding: 1em;
